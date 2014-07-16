@@ -1,0 +1,19 @@
+comp 1950 website project
+
+1. floating navigation
+
+2. breadcrum headers
+
+3. code block with scrollbars
+
+4. different color scheme (for each section like resources, exercies, examples, etc)
+
+5. quiz site
+
+6. Responsive Design
+
+
+
+schedule
+
+saturday morning: sitemap, photoshop site mockup by jtpark / introduction by dane
