@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>COMP 1950 | Lecture One</title>
+		<meta name="description" content="Multi-Level Push Menu: Off-screen navigation with multiple levels" />
+		<meta name="keywords" content="multi-level, menu, navigation, off-canvas, off-screen, mobile, levels, nested, transform" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+				
+	<link type="text/css" rel="alternate stylesheet" href="css/lecture_projector.css" title="Projector Style" media="screen" />
+	<link type="text/css" rel="stylesheet" href="css/lecture_printer.css" media="print" />
+	</head>
+	<body>
+		<div class="container" id="top">
+        
+			<!-- Push Wrapper -->
+			<div class="mp-pusher" id="mp-pusher">
+
+				<!-- mp-menu -->
+				<!--#include file="nav.html" -->
+				<!-- /mp-menu -->
+
+				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
+					<div class="scroller-inner">
+						
+						<div class="content clearfix">
+							<div class="block-10 clearfix">
+								<p><a href="#" id="trigger" class="menu-trigger"></a></p>
+                            </div>
+
+							<div class="block-90">
+<section id="comp1950">
+    <h1 id="agenda">LECTURE three: CSS TECHNIQUES</h1>
+    <div class="desc">
+		<h2>Agenda</h2>
+
+            <ul>
+                <li>stylesheet management</li>
+				<li>advanced selectors</li>
+				<li>rule specificity</li>
+				<li>rule compacting</li>
+            </ul>
+
+    </div>
+    <div id="cirricculum" class="desc">
+        <h2>Linking your CSS</h2>
+        <p>When linking to external style sheets, there are a number of things to know. A standard LINK element:</p>
+        <div id="code">
+            <pre>
+    <code>&lt;link	rel="stylesheet" 
+    type="text/css" 
+    href="http://www.mysite.com/css/styles.css" 
+    title="Main Style" 
+    media="screen" /&gt;
+    </code>
+            </pre>
+        </div>
+
+    	<p>This features a number of things to keep in mind: 
+        <ul>
+            <li>Each stylesheet requires it's own link tag</li>
+            <li>Multiple stylesheets can be loaded (main.css, fonts.css, layout.css, etc)</li>
+            <li>The rel determines how the HTML will use the file linked to</li>
+            <li>The type attribute is optional, potentially increasing browser backward compatibility</li>
+            <li>href defines the path, relative or absolute, to the css file</li>
+            <li>The title attribute allows the user to select different styles if required</li>
+            <li>The media attribute allows you to specify what medium this should be viewed in</li>
+        </ul>
+    	</p>
+
+    <h2>Alternate sheets: rel</h2>
+        <p>You can also have alternate style sheets supported	
+            <ul>
+                <li>rel="stylesheet" defines the default stylesheets to use</li>
+                <li>rel="alternate stylesheet" allows different styles to be defined</li>
+                <li>Tip: If you have multiple sheets that belong to one "look" make sure they all have the same title</li>
+                <li>You can create alternate style sheets for users, allowing them to select which ones they would like to see</li>
+                <li>An example would be to create a 'Larger Text' style sheet with everything in a larger font, or an alternate Halloween stylesheet for your site</li>
+                <li>Many browsers are now giving users the ability to select which sheet they would like to see. (Firefox: View > Page Style)</li>
+            </ul>
+        </p>
+    </div>
+    
+    <div id="excercise" class="desc">
+		<h2>Exercise</h2>
+
+            <ul>
+                <li><a href="#" id="alt_css">Download the alternate stylesheet starting files</a></li>
+                <li>Make a copy of one of the current stylesheets, rename it, and change some of the styles</li>
+                <li>Add a third alternative stylesheet to this page</li>
+                <li>Show your instructor when complete</li>
+            </ul>
+
+    </div>
+    
+    <div id="homework" class="desc">
+		<h2>Homework</h2>
+
+            <ul>
+                <li>all homework must be published to the class server by midnight, the night before the following class</li>
+                <li><a href="#">download the homework</a></li>
+            </ul>
+
+    </div>
+    
+
+</section>	
+        </div>
+		</div>
+		</div>
+					</div><!-- /scroller-inner -->
+				</div><!-- /scroller -->
+
+			</div><!-- /pusher -->
+              
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/mlpushmenu.js"></script>
+		<script>
+			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+		</script>
+	</body>
+</html>

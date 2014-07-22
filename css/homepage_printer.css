@@ -1,0 +1,16 @@
+body{
+	margin:25px;
+}
+
+h1{
+	padding:5px;
+}
+
+#desc{
+	padding:10px;
+}
+
+a:link:after, a:visited:after {
+   content: " (" attr(href) ") ";
+   font-weight:bold;
+}
