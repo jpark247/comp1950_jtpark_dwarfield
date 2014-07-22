@@ -1,0 +1,21 @@
+body{
+	font-size:250%;
+	background-color:grey;
+	margin:25px;
+}
+
+h1{
+	background-color:orange;
+	color:white;
+	padding:5px;
+}
+
+#desc{
+	background-color:white;
+	padding:10px;
+}
+
+a{
+	color:orange;
+	font-weight:bold;
+}

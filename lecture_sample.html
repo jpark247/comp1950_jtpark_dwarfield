@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Group Project Sample Lecture</title>
+	<link	type="text/css"
+				rel="stylesheet"
+				href="lecture_sample.css"
+				title="Main Style"
+				media="screen"	/>
+				
+	<link	type="text/css"
+				rel="alternate stylesheet"
+				href="lecture_sample_projector.css"
+				title="Projector Style"
+				media="screen"	/>
+				
+	<link	type="text/css"
+				rel="stylesheet"
+				href="lecture_sample_printer.css"
+				media="print"	/>
+</head>
+<body>
+	<div id="container">
+		<header>
+			
+		</header>
+		<section>
+		<h1>LECTURE THREE: CSS TECHNIQUES</h1>
+		<form action="#">
+		<h2>Linking your CSS</h2>
+		When linking to external style sheets, there are a number of things to know. A standard LINK element:<br>
+		<div id="code">
+			<pre><code>&lt;link	rel="stylesheet" 
+	type="text/css" 
+	href="http://www.mysite.com/css/styles.css" 
+	title="Main Style" 
+	media="screen" /&gt;</code></pre>
+		</div>
+	
+	This features a number of things to keep in mind: 
+	
+	<ul>
+    <li>Each stylesheet requires it's own link tag</li>
+    <li>Multiple stylesheets can be loaded (main.css, fonts.css, layout.css, etc)</li>
+    <li>The rel determines how the HTML will use the file linked to</li>
+    <li>The type attribute is optional, potentially increasing browser backward compatibility</li>
+    <li>href defines the path, relative or absolute, to the css file</li>
+    <li>The title attribute allows the user to select different styles if required</li>
+    <li>The media attribute allows you to specify what medium this should be viewed in</li>
+	</ul>
+	
+	<h2>Alternate sheets: rel</h2>
+	You can also have alternate style sheets supported
+	
+	<ul>
+    <li>rel="stylesheet" defines the default stylesheets to use</li>
+    <li>rel="alternate stylesheet" allows different styles to be defined</li>
+    <li>Tip: If you have multiple sheets that belong to one "look" make sure they all have the same title</li>
+    <li>You can create alternate style sheets for users, allowing them to select which ones they would like to see</li>
+    <li>An example would be to create a 'Larger Text' style sheet with everything in a larger font, or an alternate Halloween stylesheet for your site</li>
+    <li>Many browsers are now giving users the ability to select which sheet they would like to see. (Firefox: View > Page Style)</li>
+	</ul>
+	
+	<div id="alt">
+		
+	<div id="bold">ALTERNATE STYLESHEET EXERCISE</div>
+    <a href="#" id="alt_css">Download the alternate stylesheet starting files</a><br>
+    Make a copy of one of the current stylesheets, rename it, and change some of the styles<br>
+    Add a third alternative stylesheet to this page<br>
+    Show your instructor when complete<br>
+
+	</div>
+	
+	<h2>Media variations: media</h2>
+	
+	<ul>
+    <li>media="type" can be a powerful tool</li>
+    <li>Examples of supported types: all, aural, braille, embossed, handheld, print, projection, screen, tty, tv</li>
+    <li>Most are not commonly supported, but ones that you will see often: all, screen, print with handheld becoming more popular</li>
+    <li>Almost all browsers use the print sheet to render text and elements for when the user selects a page to print</li>
+    <li>This can be extremely valuable for when you have a lot of page information that you might not want to have show up on a printout (ie: navigation)</li>
+    <li>Try a media detection exercise: <a href="#">Download css media example files</a>, test them after publishing online. Examine the code to see how they work.</li>
+    <li>NOTE: you can simulate a variety of clients using Google's Chrome web browser:
+        <ul>
+		<li>Open the document in Chrome</li>
+        <li>Choose Tools > Developer Tools</li>
+        <li>Open the Emulate panel</li>
+        <li>Choose the Screen option, then enable CSS Media</li>
+        <li>Use this to emulate different source devices</li>
+		</ul>
+		</li>
+    <li>Several handheld devices (iPhones, tablets, most Andriods) do not identify themselves as media type 'handheld'</li>
+    <li>The reasoning was that the devices were more than capable of displaying standard web sites, so they identify as 'screen'</li>
+    <li>In session #5, we will apply media queries for responsive design, allowing us to customize the presentation based on the various portable devices</li>
+	</ul>
+
+
+		</form>
+		</section>
+		
+	</div><!-- end container -->
+</body>
+</html>
